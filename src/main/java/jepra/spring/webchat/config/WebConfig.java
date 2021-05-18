@@ -25,7 +25,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     public ServletContextTemplateResolver templateResolver() {
         ServletContextTemplateResolver resolver = new ServletContextTemplateResolver();
         resolver.setPrefix("/");
-        resolver.setSuffix(".html");
+        resolver.setSuffix(".jsp");
         resolver.setTemplateMode("HTML5");
         resolver.setCacheable(false);
         return resolver;
